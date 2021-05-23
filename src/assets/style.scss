@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: #f2f2f2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.card {
+  background: #ffffff;
+
+  padding: 70px 80px 80px;
+  max-width: 940px;
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+
+    padding-bottom: 20px;
+    border-bottom: 3px solid #00b0e7;
+  }
+  &__subtitle {
+    font-size: 28px;
+    font-weight: 700;
+
+    margin-top: 30px;
+  }
+
+  &__field {
+    margin-top: 20px;
+
+    &_title {
+      font-size: 18px;
+
+      &-right {
+         display: inline-block;
+         margin-left: 10px;
+         
+      }
+    }
+
+    &_text {
+      width: 100%;
+      max-width: 380px;
+      max-height: 58px;
+      box-sizing: border-box;
+      border: 1px solid #ccd6d8;
+      border-radius: 5px;
+      padding: 15px 35px 15px 20px;
+      font-size: 18px;
+      color: #484848;
+    }
+
+    &_checkbox {
+      transform: scale(1.5);
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    &_radio {
+      transform: scale(1.5);
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+  }
+}
